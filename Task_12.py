@@ -5,9 +5,14 @@
 
 summ_of_num = int(input("Summ of numbers: "))
 product_of_num = int(input("Product of numbers: "))
+num1 = 0
+num2 = 0
 for x in range(1,1000):
     for y in range(1,1000):
         if (x + y) == summ_of_num and x * y == product_of_num:
-            print(f"Numbers are {x} and {y}")
+            num1 = x
+            num2 = y
+print(f"Numbers are {num1} and {num2}")
+
             
  
