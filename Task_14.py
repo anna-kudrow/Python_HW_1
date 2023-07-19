@@ -2,5 +2,7 @@
 # не превосходящие числа N.
 
 number = int(input("Input a number: "))
-for i in range(0, number + 1):
-    print(f"2 ^ {i} is {2 ** i}")
+stepen = 0
+while 2 ** stepen <= number:
+    print(2 ** stepen)
+    stepen += 1
